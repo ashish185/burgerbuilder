@@ -1,0 +1,32 @@
+.SideDrawer {
+    position: fixed;
+    width: 280px;
+    max-width: 70%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    z-index: 200; /*Side drawer ka bda hona chiye backdrop se */
+    background-color: white;
+    padding: 32px 16px;
+    box-sizing: border-box;
+    transition: transform 0.3s ease-out; /* responsible for Opening and closing of Side Drawer */
+}
+
+@media (min-width: 500px) { /*If display exceeds more than 500 px then Side Drawer wil not visible*/
+    .SideDrawer {
+        display: none;
+    }
+}
+
+.Open {
+    transform: translateX(0); /*Responsible for open X */
+}
+
+.Close {
+    transform: translateX(-100%);
+}
+
+.Logo {
+    height: 11%;
+    margin-bottom: 32px;
+}

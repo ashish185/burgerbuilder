@@ -1,0 +1,64 @@
+Q1) Functional Component m hum brackets Open wale bhi use kar skte or Curlbt wale bhi {},
+    What is the use of it?
+Ans1) Agr humay JSX return se pehle kuch krna chahte h to hum {} ye use krenge nhi to ().
+
+Q2) manlo <div> k andar component <Logo> ki to direct kar skte h
+
+Q3) shouldComponentUpdate kya krta h?
+Ye component ki re render cycle ko bachata h, For ex Modal tha jo vo Click khulne par dikhne chiye to usme childern m kuch aise props pass ho
+rhe thay jo change ho rhe thay, If props changes then Component re render. To avoid this we can use this.
+
+Q4) ComponentWillUpdate will call whenever the props change or components render.
+Q5) High order component: It is generally used to Wrap an Component, For ex : Auxi in Project, React.Fragment.
+Q6) which package we need to import react router?
+Q7) What are the various component we require for routing?
+uses?
+Q8) Which hoc needs to pass in order to get Routing props in our component?
+Q9)Steps
+i) need to wrap App component in <BrowserRouter>
+Q10) What methods can be used with prop.history in routing
+this.props.history.goBack(), this.props.history.replace('/checkout/contact-data');
+this.props.history.push({
+            pathname:'/checkout',
+            search:'?'+queryString
+        });
+this.props.location.search();
+Q11) What we use to get the path we are present?
+Ans: <Route path={this.props.match.path+'xyz'}/>
+Q12) Humne kuch aise bnaya h ki jis Navigation link k page par honge vo active dikhega but kai par ye problem aati ki dono active dikhte
+because main page i.e '/' and other is '/order' both start with '/'. To dono active dikhte
+Solution is just pass the exact property.
+q13) <Route path={this.props.match.path+'/contact-data'}
+                            // render={(props) =>
+                            //     (<ContactData ingredients={this.state.ingredients} price={ this.state.totalPrice} {...props}/>)}
+                            component= {ContactData}
+                     />
+     We can pass here Render as well as Component, where to use render or where to use component
+ Ans) 1) User Render if you want to pass props in Component 2) componet props hum sirk Component
+ ka name likhte h brackets m
+
+// Redux
+q13) Command to save react redux package
+Ans: npm install --save redux and react-redux
+q14) How do we connect Store to our application?
+ans) In index.js file Apni application for ex App.js h eske andar sab routing hue h, it's wrap in BrowserRouter like this.
+<BrowserRouter>
+    <App/>
+</BrowserRouter>
+esko connect kar <Provider> component se qrap kar do.
+Provider component comes from 'react-redux' package.
+q15)React and redux version used in this project.
+Ans: react": "^16.13.1","react-redux": "^7.2.1",
+q16) connect function kaise import krte h
+ans:) import {connect } from 'react-redux';
+q17) mapStateToProps and mapDispatchToProps, is there any seq to pass it on connect?
+ans yes, We new to pass mapStateToProps as ist argument and mapDispatchToProps as 2nd arg
+q18) what if either mapStateToProps or mapDispatchToProps is available?
+ans: if mapsDispatch not required
+connect(mapStateToProps)(componentName)
+and if mapsStateToProps not required
+connect(null,mapsDispatch)(componentName)
+q19) Redux add krne se kya fayda hua
+ans) We don't need to add data in params for going one page to another.
+q20) pushHistory={ buildQueryParams( 'Add' ) } I was doing this, what's problem in this?
+ans:) You need to pass call back if you are providing args.
