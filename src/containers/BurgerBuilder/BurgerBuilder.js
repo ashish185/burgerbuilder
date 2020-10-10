@@ -124,7 +124,6 @@ class BurgerBuilder extends Component {
                                purchasingHandler = { this.purchasingHandler }
                                // purchase = { this.updatePurchaseState }
                 />
-                               <div>Build Controls</div>
             </Auxi>
         );
     }
