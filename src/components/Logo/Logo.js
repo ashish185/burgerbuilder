@@ -6,6 +6,7 @@ import classes from './Logo.css'
 const logo = ( ) => (
     <div className={classes.Logo}>
         <img src={burgerLogo} alt="My burger"/>
-    </div>);
+    </div>
+);
 
 export default logo;

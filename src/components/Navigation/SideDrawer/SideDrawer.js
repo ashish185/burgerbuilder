@@ -5,6 +5,8 @@ import classes from './SideDrawer.css'
 import Backdrop from "../../UI/Backdrop/Backdrop";
 
 const sideDrawer = (props) => {
+
+    /* we want side drawer disaapear as soon as we click neckdrop */
     let attachedClasses = [ classes.SideDrawer, classes.Close];
     if(props.open) {
         attachedClasses = [classes.SideDrawer,classes.Open];

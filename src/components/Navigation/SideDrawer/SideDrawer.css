@@ -12,16 +12,18 @@
     transition: transform 0.3s ease-out; /* responsible for Opening and closing of Side Drawer */
 }
 
-@media (min-width: 500px) { /*If display exceeds more than 500 px then Side Drawer wil not visible*/
+/*If display exceeds more than 500 px then Side Drawer wil not visible*/
+@media (min-width: 500px) { 
     .SideDrawer {
         display: none;
     }
 }
-
+/*Shift it to the right*/
 .Open {
-    transform: translateX(0); /*Responsible for open X */
+    transform: translateX(0); 
 }
 
+/*Shift it to the left*/
 .Close {
     transform: translateX(-100%);
 }

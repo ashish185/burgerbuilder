@@ -2,7 +2,8 @@ import React from 'react';
 import classes from './DrawToogler.css'
 const DrawerToggle = (props) => {
     return (
-        <div onClick={ props.clicked} className={classes.DrawerToggle}>
+        <div className={classes.DrawerToggle} onClick={ props.clicked} >
+            {/*This will give three lines for the side toogler*/}
             <div></div>
             <div></div>
             <div></div>

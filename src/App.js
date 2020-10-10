@@ -9,6 +9,7 @@ class App extends Component {
   render() {
     return (
       <div >
+        {/* First Layout will execute then routing takes place */}
         <Layout>
           <Switch>
               <Route path="/ashBurgerBuilder" exact component={BurgerBuilder}/>

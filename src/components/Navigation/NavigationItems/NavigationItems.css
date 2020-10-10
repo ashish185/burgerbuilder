@@ -4,7 +4,7 @@
     padding: 0;
     list-style: none;
     display: flex;
-    flex-flow: column;
+    flex-flow: column; /* So that in Side drawer navigational items are beneath to each other */
     align-items: center;
     height: 100%;
 }

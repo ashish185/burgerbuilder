@@ -24,8 +24,6 @@ class Layout extends Component {
         return (
             <Auxi>
                 <Toolbar drawerToggleClicked={this.sideDrawerToggleHandler}/>
-                {/*<SideDrawer/>*/}
-                {/*<toolbar drawerToggleClicked={this.sideDrawerToggleHandler} />*/}
                 <SideDrawer
                     open={this.state.showSideDrawer}
                     closed={this.sideDrawerClosedHandler} />

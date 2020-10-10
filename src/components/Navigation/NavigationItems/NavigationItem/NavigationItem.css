@@ -5,7 +5,7 @@
     /*height: 100%;*/
     width: 100%;
     display: block;
-    align-items: center;
+    /* align-items: center; */
 }
 
 .NavigationItem a {
@@ -16,7 +16,7 @@
     box-sizing: border-box;
     display: block;
     /*border-bottom: 4px solid transparent;*/
-    padding: 16px 10px;
+    /* padding: 16px 10px; */
 }
 
 .NavigationItem a:hover,
